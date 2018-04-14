@@ -175,11 +175,20 @@ class MainVC: BaseController, UICollectionViewDelegate, UICollectionViewDataSour
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let  headerCell = carParkStatusTableView.dequeueReusableCell(withIdentifier: "cellTwo") as! CarParkView
         headerCell.backgroundColor = UIColor(red: 42.0/255, green: 13.0/255, blue: 99.0/255, alpha: 0.8)
-        headerCell.mainLabel.text = "Name"
+        headerCell.mainLabel.text = "Car Park Name"
+        headerCell.mainLabel.textColor = .white
+        
         headerCell.firstFloor.text = "First Floor"
+        headerCell.firstFloor.textColor = .white
+        
         headerCell.secondFloor.text = "Second Floor"
+        headerCell.secondFloor.textColor = .white
+        
         headerCell.thirdFloor.text = "Third Floor"
-        headerCell.fourthFloor.text = "Fourth Flor"
+        headerCell.thirdFloor.textColor = .white
+        
+        headerCell.fourthFloor.text = "Fourth Floor"
+        headerCell.fourthFloor.textColor = .white
         return headerCell
     }
     
