@@ -19,6 +19,7 @@
 		686C648E208224DC00B40E97 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686C648D208224DC00B40E97 /* MapVC.swift */; };
 		686C64922082356100B40E97 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686C64912082356100B40E97 /* WeatherView.swift */; };
 		686C64962082437800B40E97 /* ItemCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686C64952082437700B40E97 /* ItemCellView.swift */; };
+		68A03CA9208255870054DF29 /* CarParkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A03CA8208255870054DF29 /* CarParkView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		686C648D208224DC00B40E97 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		686C64912082356100B40E97 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		686C64952082437700B40E97 /* ItemCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCellView.swift; sourceTree = "<group>"; };
+		68A03CA8208255870054DF29 /* CarParkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarParkView.swift; sourceTree = "<group>"; };
 		722275789D7208517EDBCDD0 /* Pods-TavOlduk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TavOlduk.release.xcconfig"; path = "Pods/Target Support Files/Pods-TavOlduk/Pods-TavOlduk.release.xcconfig"; sourceTree = "<group>"; };
 		8B38DCAED26136CF684F201A /* Pods-TavOlduk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TavOlduk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TavOlduk/Pods-TavOlduk.debug.xcconfig"; sourceTree = "<group>"; };
 		CE611FB766CD1D42B949DCDA /* Pods_TavOlduk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TavOlduk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +101,7 @@
 			children = (
 				686C64952082437700B40E97 /* ItemCellView.swift */,
 				686C64912082356100B40E97 /* WeatherView.swift */,
+				68A03CA8208255870054DF29 /* CarParkView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				686C64712082141D00B40E97 /* MainVC.swift in Sources */,
 				686C6485208214F400B40E97 /* Extensions.swift in Sources */,
 				686C648E208224DC00B40E97 /* MapVC.swift in Sources */,
+				68A03CA9208255870054DF29 /* CarParkView.swift in Sources */,
 				686C646F2082141C00B40E97 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
