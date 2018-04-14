@@ -8,6 +8,7 @@ target 'TavOlduk' do
   pod 'SwiftyJSON', '~> 4.0'
   pod 'GoogleMaps'
   pod 'GooglePlaces'
+  pod 'Alamofire', '~> 4.7'
   # Pods for TavOlduk
 
 #AIzaSyAcikaBQVKabEsBPFGERk6GkHJgaEUxCZM

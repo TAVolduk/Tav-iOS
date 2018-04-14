@@ -16,8 +16,9 @@
 		686C6485208214F400B40E97 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686C6484208214F400B40E97 /* Extensions.swift */; };
 		686C6489208215C800B40E97 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686C6488208215C800B40E97 /* ProfileVC.swift */; };
 		686C648C208215E800B40E97 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686C648B208215E800B40E97 /* BaseViewController.swift */; };
-		686C648E208224DC00B40E97 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686C648D208224DC00B40E97 /* MapController.swift */; };
-		686C64922082356100B40E97 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686C64912082356100B40E97 /* File.swift */; };
+		686C648E208224DC00B40E97 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686C648D208224DC00B40E97 /* MapVC.swift */; };
+		686C64922082356100B40E97 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686C64912082356100B40E97 /* WeatherView.swift */; };
+		686C64962082437800B40E97 /* ItemCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686C64952082437700B40E97 /* ItemCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,8 +32,9 @@
 		686C6484208214F400B40E97 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		686C6488208215C800B40E97 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		686C648B208215E800B40E97 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		686C648D208224DC00B40E97 /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
-		686C64912082356100B40E97 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		686C648D208224DC00B40E97 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		686C64912082356100B40E97 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		686C64952082437700B40E97 /* ItemCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCellView.swift; sourceTree = "<group>"; };
 		722275789D7208517EDBCDD0 /* Pods-TavOlduk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TavOlduk.release.xcconfig"; path = "Pods/Target Support Files/Pods-TavOlduk/Pods-TavOlduk.release.xcconfig"; sourceTree = "<group>"; };
 		8B38DCAED26136CF684F201A /* Pods-TavOlduk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TavOlduk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TavOlduk/Pods-TavOlduk.debug.xcconfig"; sourceTree = "<group>"; };
 		CE611FB766CD1D42B949DCDA /* Pods_TavOlduk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TavOlduk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,7 +97,8 @@
 		686C64802082143A00B40E97 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				686C64912082356100B40E97 /* File.swift */,
+				686C64952082437700B40E97 /* ItemCellView.swift */,
+				686C64912082356100B40E97 /* WeatherView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -105,7 +108,7 @@
 			children = (
 				686C648A208215D900B40E97 /* Base */,
 				686C64702082141D00B40E97 /* MainVC.swift */,
-				686C648D208224DC00B40E97 /* MapController.swift */,
+				686C648D208224DC00B40E97 /* MapVC.swift */,
 				686C6488208215C800B40E97 /* ProfileVC.swift */,
 			);
 			path = Controller;
@@ -220,12 +223,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TavOlduk/Pods-TavOlduk-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
 				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
@@ -282,10 +287,11 @@
 			files = (
 				686C648C208215E800B40E97 /* BaseViewController.swift in Sources */,
 				686C6489208215C800B40E97 /* ProfileVC.swift in Sources */,
-				686C64922082356100B40E97 /* File.swift in Sources */,
+				686C64922082356100B40E97 /* WeatherView.swift in Sources */,
+				686C64962082437800B40E97 /* ItemCellView.swift in Sources */,
 				686C64712082141D00B40E97 /* MainVC.swift in Sources */,
 				686C6485208214F400B40E97 /* Extensions.swift in Sources */,
-				686C648E208224DC00B40E97 /* MapController.swift in Sources */,
+				686C648E208224DC00B40E97 /* MapVC.swift in Sources */,
 				686C646F2082141C00B40E97 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,6 +12,9 @@ import PopupDialog
 
 class BaseController: UIViewController , UINavigationControllerDelegate {
     
+    let leftConstant = CGFloat(16)
+    let rightConstant = CGFloat(16)
+    let heightConstant = CGFloat(48)
     
     override func viewDidLoad() {
         super.viewDidLoad()
