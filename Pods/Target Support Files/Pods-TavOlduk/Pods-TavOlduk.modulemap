@@ -1,0 +1,6 @@
+framework module Pods_TavOlduk {
+  umbrella header "Pods-TavOlduk-umbrella.h"
+
+  export *
+  module * { export * }
+}

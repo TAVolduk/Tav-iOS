@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50B4BD72795E101AA62A49B8 /* Pods_TavOlduk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE611FB766CD1D42B949DCDA /* Pods_TavOlduk.framework */; };
+		686C646F2082141C00B40E97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686C646E2082141C00B40E97 /* AppDelegate.swift */; };
+		686C64712082141D00B40E97 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686C64702082141D00B40E97 /* MainVC.swift */; };
+		686C64742082141D00B40E97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 686C64722082141D00B40E97 /* Main.storyboard */; };
+		686C64762082141E00B40E97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 686C64752082141E00B40E97 /* Assets.xcassets */; };
+		686C64792082141E00B40E97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 686C64772082141E00B40E97 /* LaunchScreen.storyboard */; };
+		686C6485208214F400B40E97 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686C6484208214F400B40E97 /* Extensions.swift */; };
+		686C6489208215C800B40E97 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686C6488208215C800B40E97 /* ProfileVC.swift */; };
+		686C648C208215E800B40E97 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686C648B208215E800B40E97 /* BaseViewController.swift */; };
+		686C648E208224DC00B40E97 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686C648D208224DC00B40E97 /* MapController.swift */; };
+		686C64922082356100B40E97 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686C64912082356100B40E97 /* File.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		686C646B2082141C00B40E97 /* TavOlduk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TavOlduk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		686C646E2082141C00B40E97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		686C64702082141D00B40E97 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		686C64732082141D00B40E97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		686C64752082141E00B40E97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		686C64782082141E00B40E97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		686C647A2082141E00B40E97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		686C6484208214F400B40E97 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		686C6488208215C800B40E97 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		686C648B208215E800B40E97 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		686C648D208224DC00B40E97 /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
+		686C64912082356100B40E97 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		722275789D7208517EDBCDD0 /* Pods-TavOlduk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TavOlduk.release.xcconfig"; path = "Pods/Target Support Files/Pods-TavOlduk/Pods-TavOlduk.release.xcconfig"; sourceTree = "<group>"; };
+		8B38DCAED26136CF684F201A /* Pods-TavOlduk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TavOlduk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TavOlduk/Pods-TavOlduk.debug.xcconfig"; sourceTree = "<group>"; };
+		CE611FB766CD1D42B949DCDA /* Pods_TavOlduk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TavOlduk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		686C64682082141C00B40E97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50B4BD72795E101AA62A49B8 /* Pods_TavOlduk.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08B643EC6E72015B41EC328F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE611FB766CD1D42B949DCDA /* Pods_TavOlduk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		686C64622082141C00B40E97 = {
+			isa = PBXGroup;
+			children = (
+				686C646D2082141C00B40E97 /* TavOlduk */,
+				686C646C2082141C00B40E97 /* Products */,
+				F39BA65B49E9C5A1B796D74A /* Pods */,
+				08B643EC6E72015B41EC328F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		686C646C2082141C00B40E97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				686C646B2082141C00B40E97 /* TavOlduk.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		686C646D2082141C00B40E97 /* TavOlduk */ = {
+			isa = PBXGroup;
+			children = (
+				686C64862082150500B40E97 /* Extra */,
+				686C64822082144800B40E97 /* Repository */,
+				686C64812082144000B40E97 /* Controller */,
+				686C64802082143A00B40E97 /* View */,
+				686C646E2082141C00B40E97 /* AppDelegate.swift */,
+				686C64722082141D00B40E97 /* Main.storyboard */,
+				686C64752082141E00B40E97 /* Assets.xcassets */,
+				686C64772082141E00B40E97 /* LaunchScreen.storyboard */,
+				686C647A2082141E00B40E97 /* Info.plist */,
+			);
+			path = TavOlduk;
+			sourceTree = "<group>";
+		};
+		686C64802082143A00B40E97 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				686C64912082356100B40E97 /* File.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		686C64812082144000B40E97 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				686C648A208215D900B40E97 /* Base */,
+				686C64702082141D00B40E97 /* MainVC.swift */,
+				686C648D208224DC00B40E97 /* MapController.swift */,
+				686C6488208215C800B40E97 /* ProfileVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		686C64822082144800B40E97 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		686C64862082150500B40E97 /* Extra */ = {
+			isa = PBXGroup;
+			children = (
+				686C6484208214F400B40E97 /* Extensions.swift */,
+			);
+			path = Extra;
+			sourceTree = "<group>";
+		};
+		686C648A208215D900B40E97 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				686C648B208215E800B40E97 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F39BA65B49E9C5A1B796D74A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B38DCAED26136CF684F201A /* Pods-TavOlduk.debug.xcconfig */,
+				722275789D7208517EDBCDD0 /* Pods-TavOlduk.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		686C646A2082141C00B40E97 /* TavOlduk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 686C647D2082141E00B40E97 /* Build configuration list for PBXNativeTarget "TavOlduk" */;
+			buildPhases = (
+				A5A2A88BB766328BF5DAD8D9 /* [CP] Check Pods Manifest.lock */,
+				686C64672082141C00B40E97 /* Sources */,
+				686C64682082141C00B40E97 /* Frameworks */,
+				686C64692082141C00B40E97 /* Resources */,
+				7D4737C0086C27B37DA10542 /* [CP] Embed Pods Frameworks */,
+				A9EBB0A075B5F6E7F1C9F427 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TavOlduk;
+			productName = TavOlduk;
+			productReference = 686C646B2082141C00B40E97 /* TavOlduk.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		686C64632082141C00B40E97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Sadik Ekin Ozbay";
+				TargetAttributes = {
+					686C646A2082141C00B40E97 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 686C64662082141C00B40E97 /* Build configuration list for PBXProject "TavOlduk" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 686C64622082141C00B40E97;
+			productRefGroup = 686C646C2082141C00B40E97 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				686C646A2082141C00B40E97 /* TavOlduk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		686C64692082141C00B40E97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				686C64792082141E00B40E97 /* LaunchScreen.storyboard in Resources */,
+				686C64762082141E00B40E97 /* Assets.xcassets in Resources */,
+				686C64742082141D00B40E97 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7D4737C0086C27B37DA10542 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TavOlduk/Pods-TavOlduk-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
+				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TavOlduk/Pods-TavOlduk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5A2A88BB766328BF5DAD8D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TavOlduk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9EBB0A075B5F6E7F1C9F427 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TavOlduk/Pods-TavOlduk-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TavOlduk/Pods-TavOlduk-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		686C64672082141C00B40E97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				686C648C208215E800B40E97 /* BaseViewController.swift in Sources */,
+				686C6489208215C800B40E97 /* ProfileVC.swift in Sources */,
+				686C64922082356100B40E97 /* File.swift in Sources */,
+				686C64712082141D00B40E97 /* MainVC.swift in Sources */,
+				686C6485208214F400B40E97 /* Extensions.swift in Sources */,
+				686C648E208224DC00B40E97 /* MapController.swift in Sources */,
+				686C646F2082141C00B40E97 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		686C64722082141D00B40E97 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				686C64732082141D00B40E97 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		686C64772082141E00B40E97 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				686C64782082141E00B40E97 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		686C647B2082141E00B40E97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		686C647C2082141E00B40E97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		686C647E2082141E00B40E97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B38DCAED26136CF684F201A /* Pods-TavOlduk.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KH4D6VQ55F;
+				INFOPLIST_FILE = TavOlduk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sadikekinozbay.TavOlduk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		686C647F2082141E00B40E97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 722275789D7208517EDBCDD0 /* Pods-TavOlduk.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KH4D6VQ55F;
+				INFOPLIST_FILE = TavOlduk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sadikekinozbay.TavOlduk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		686C64662082141C00B40E97 /* Build configuration list for PBXProject "TavOlduk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				686C647B2082141E00B40E97 /* Debug */,
+				686C647C2082141E00B40E97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		686C647D2082141E00B40E97 /* Build configuration list for PBXNativeTarget "TavOlduk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				686C647E2082141E00B40E97 /* Debug */,
+				686C647F2082141E00B40E97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 686C64632082141C00B40E97 /* Project object */;
+}
