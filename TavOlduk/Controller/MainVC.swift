@@ -9,10 +9,12 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import PopupDialog
 
 class MainVC: BaseController, UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout, UITableViewDelegate, UITableViewDataSource {
     
     var foodArray = [String]()
+    var foodRating = [String]()
     var parkArray = [[String]]()
     
     lazy var carParkStatusTableView : UITableView = {
@@ -105,15 +107,19 @@ class MainVC: BaseController, UICollectionViewDelegate, UICollectionViewDataSour
         }
         
         Alamofire.request("http://35.159.15.121:8080/foodAndBeverage/restaurantList?language=tr&location=ist").responseJSON { response in
-            if let data = response.data{
-                let jsonData = try? JSON(data: data)
-                if let results = jsonData!["results"].array {
-                    print(results)
-                    for r in results{
-                        self.foodArray.append(r["title"].string!)
+                if let data = response.data{
+                    let jsonData = try? JSON(data: data)
+                    if let results = jsonData!["results"].array {
+                        print(results)
+                        for r in results{
+                            self.foodArray.append(r["title"].string!)
+                            self.foodRating.append(r["rate"].string!)
+                        }
+                        
                     }
-                    self.menuListCollectionView.reloadData()
                 }
+            DispatchQueue.main.async {
+                self.menuListCollectionView.reloadData()
             }
         }
         
@@ -152,6 +158,31 @@ class MainVC: BaseController, UICollectionViewDelegate, UICollectionViewDataSour
             let cell = menuListCollectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ItemCellView
             cell.nameOfTheRestaurant.text = foodArray[indexPath.item]
             return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        // Prepare the popup assets
+        let title = foodArray[indexPath.item]
+        var message = ""
+        if(foodRating[indexPath.item] == "1"){
+            message = "It is a bad restaurant.\nThe rating is 1"
+        }else if(foodRating[indexPath.item] == "2"){
+            message = "It is a not that good restaurant.\nThe rating is 2"
+        }else if(foodRating[indexPath.item] == "3"){
+            message = "It is a normal restaurant.\nThe rating is 3"
+        }else if(foodRating[indexPath.item] == "4"){
+            message = "It is a good restaurant.\nThe rating is 4"
+        }else{
+            message = "It is a brilliant restaurant.\nThe rating is 5"
+        }
+        
+        let popup = PopupDialog(title: title, message: message)
+        let buttonOne = CancelButton(title: "Okay") {
+            print("You okayed.")
+        }
+        
+        popup.addButtons([buttonOne])
+        self.present(popup, animated: true, completion: nil)
     }
     
     

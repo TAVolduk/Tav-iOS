@@ -84,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				686C64862082150500B40E97 /* Extra */,
-				686C64822082144800B40E97 /* Repository */,
 				686C64812082144000B40E97 /* Controller */,
 				686C64802082143A00B40E97 /* View */,
 				686C646E2082141C00B40E97 /* AppDelegate.swift */,
@@ -115,13 +114,6 @@
 				686C6488208215C800B40E97 /* ProfileVC.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		686C64822082144800B40E97 /* Repository */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Repository;
 			sourceTree = "<group>";
 		};
 		686C64862082150500B40E97 /* Extra */ = {
@@ -228,6 +220,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-TavOlduk/Pods-TavOlduk-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
@@ -235,6 +228,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -444,6 +438,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KH4D6VQ55F;
 				INFOPLIST_FILE = TavOlduk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -463,6 +458,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KH4D6VQ55F;
 				INFOPLIST_FILE = TavOlduk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -9,6 +9,7 @@ target 'TavOlduk' do
   pod 'GoogleMaps'
   pod 'GooglePlaces'
   pod 'Alamofire', '~> 4.7'
+  pod 'NVActivityIndicatorView'
   # Pods for TavOlduk
 
 #AIzaSyAcikaBQVKabEsBPFGERk6GkHJgaEUxCZM
